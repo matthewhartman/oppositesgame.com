@@ -101,7 +101,7 @@
     }
     .button:hover,
     .button:focus {
-      background: #212121;
+      background: #343434;
     }
     .button:active {
       transform: translate(0, 2px);
@@ -133,6 +133,48 @@
       line-height: normal;
       padding-top: 40px;
     }
+    .modal {
+      width: 100%;
+      height: 100%;
+      display: none;
+    }
+    .modal:target {
+      display: block;
+    }
+    .modal-content {
+      padding: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .modal-close {
+      color: #343434;
+      position: relative;
+      display: flex;
+      text-decoration: none;
+      align-items: center;
+      width: 60px;
+      height: 40px;
+    }
+    .modal-close:before,
+    .modal-close:after {
+      content: "";
+      width: 16px;
+      height: 2px;
+      background-color: #343434;
+      display: block;
+      position: absolute;
+      top: 18px;
+      right: 0;
+      transform: rotate(45deg);
+    }
+    .modal-close:after {
+      transform: rotate(135deg);
+    }
   </style>
 </head>
 <body>
@@ -151,7 +193,22 @@
     <span class="sloth-with-box"></span>
     <div class="footer">
       <p>
-        © 2019. All rights reserved &nbsp; - &nbsp; <a href="#">Privacy Policy</a>
+        © 2019. All rights reserved &nbsp; - &nbsp; <a href="#privacy-policy">Privacy Policy</a>
+      </p>
+    </div>
+  </div>
+  <div id="privacy-policy" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>
+          Privacy Policy
+        </h2>
+        <a class="modal-close" href="#">
+          Close
+        </a>
+      </div>
+      <p>
+        ...
       </p>
     </div>
   </div>
