@@ -4,21 +4,156 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Opposites Game</title>
-  <meta name="description" content="Kids game for finding the opposites." />
+  <meta name="description" content="The perfect kids game for learning about opposites." />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fdee9e">
-  <meta name="msapplication-TileColor" content="#fdee9e">
-  <meta name="theme-color" content="#fdee9e">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fbf6e4">
+  <meta name="msapplication-TileColor" content="#fbf6e4">
+  <meta name="theme-color" content="#fbf6e4">
+  <style>
+    @font-face {
+      font-display: fallback;
+      font-family: 'Vollkorn Medium';
+      font-style: normal;
+      font-weight: 400;
+      src: url('vollkorn-v10-latin-600.woff2') format('woff2');
+    }
+    *, :after, :before {
+      -webkit-box-sizing: border-box;
+      box-sizing:border-box;
+    }
+    .sr {
+      border:0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    html {
+      line-height: 1.15;
+      -webkit-text-size-adjust: 100%;
+      height: 100%;
+    }
+    body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Vollkorn Medium', sans-serif;
+      font-size: 16px;
+      line-height: 22px;
+      color: #343434;
+      font-weight: 500;
+      background: #fbf6e4;
+    }
+    a {
+      color: #343434;
+      text-decoration: underline;
+    }
+    a:hover,
+    a:focus {
+      text-decoration: none;
+    }
+    .container {
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .content {
+      text-align: center;
+      padding: 20px 0 40px 0;
+    }
+    .button-google-play {
+      display: block;
+      margin: 0 auto;
+    }
+    @media only screen and (min-width: 520px) {
+      .content {
+        text-align: left;
+        padding: 0;
+      }
+      .container {
+        padding: 60px 20px;
+      }
+      .button-google-play {
+        margin: 0;
+      }
+    }
+    .logo {
+      color: #f45d4c;
+      font-size: 32px;
+      line-height: 38px;
+      font-weight: 500;
+      margin: 0;
+    }
+    .hero {
+      width: 240px;
+      margin: 20px 0 32px 0;
+    }
+    .button {
+      background: #f45d4c;
+      border-radius: 8px;
+      transition: all .3s;
+    }
+    .button:hover,
+    .button:focus {
+      background: #212121;
+    }
+    .button:active {
+      transform: translate(0, 2px);
+    }
+    .button-google-play {
+      width: 180px;
+      height: 60px;
+      display: flex;
+    }
+    .button-google-play:before {
+      content: "";
+      background: url(google-play.svg) 50% 50% no-repeat;
+      width: 130px;
+      height: 40px;
+      margin: auto;
+      display: block;
+    }
+    .sloth-with-box {
+      width: 200px;
+      height: 250px;
+      background: url(sloth-with-box.svg) 50% 50% no-repeat;
+      display: block;
+      margin-left: 40px;
+    }
+    .footer {
+      width: 100%;
+      text-align: center;
+      font-size: 13px;
+      line-height: normal;
+      padding-top: 40px;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <h1>Opposites Game</h1>
-    <p>
-      Website coming soon.
-    </p>
+    <div class="content">
+      <h1 class="logo">
+        opposites game
+      </h1>
+      <p class="hero">
+        The perfect kids game for learning about opposites.
+      </p>
+      <a class="button button-google-play" href="#">
+        <span class="sr">Get it on Google Play</span>
+      </a>
+    </div>
+    <span class="sloth-with-box"></span>
+    <div class="footer">
+      <p>
+        © 2019. All rights reserved &nbsp; - &nbsp; <a href="#">Privacy Policy</a>
+      </p>
+    </div>
   </div>
 </body>
 </html>
