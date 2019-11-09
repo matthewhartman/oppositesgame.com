@@ -157,7 +157,7 @@
     .modal:target {
       display: block;
     }
-    .modal-content {
+    .modal-container {
       padding: 20px;
       max-width: 600px;
       margin: 0 auto;
@@ -221,14 +221,16 @@
   </div>
   <div id="privacy-policy" class="modal">
     <div class="modal-header">
-      <h2 class="heading">
-        privacy policy
-      </h2>
-      <a class="modal-close" href="#">
-        Close
-      </a>
+      <div class="modal-container">
+        <h2 class="heading">
+          privacy policy
+        </h2>
+        <a class="modal-close" href="#">
+          Close
+        </a>
+      </div>
     </div>
-    <div class="modal-content">
+    <div class="modal-content modal-container">
       <h2 class="heading">
         overview
       </h2>
