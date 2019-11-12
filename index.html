@@ -76,25 +76,6 @@
       text-align: center;
       padding: 20px 0 40px 0;
     }
-    .button-google-play {
-      display: block;
-      margin: 0 auto;
-    }
-    @media only screen and (min-width: 520px) {
-      .content {
-        text-align: left;
-        padding: 0;
-      }
-      .container {
-        padding: 60px 20px;
-      }
-      .button-google-play {
-        margin: 0;
-      }
-      .sloth-with-box {
-        margin-left: 40px;
-      }
-    }
     .logo {
       color: #f45d4c;
       font-size: 32px;
@@ -107,7 +88,11 @@
       margin: 20px 0 32px 0;
     }
     .button {
+      display: block;
+      margin: 8px auto;
       background: #f45d4c;
+      color: #fff;
+      text-decoration: none;
       border-radius: 8px;
       transition: all .3s;
     }
@@ -123,6 +108,13 @@
       height: 60px;
       display: flex;
     }
+    .button-online {
+      width: 180px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     .button-google-play:before {
       content: "";
       background: url(google-play.svg) 50% 50% no-repeat;
@@ -136,6 +128,21 @@
       height: 250px;
       background: url(sloth-with-box.svg) 50% 50% no-repeat;
       display: block;
+    }
+    @media only screen and (min-width: 520px) {
+      .content {
+        text-align: left;
+        padding: 0;
+      }
+      .container {
+        padding: 60px 20px;
+      }
+      .button {
+        margin: 8px 0;
+      }
+      .sloth-with-box {
+        margin-left: 40px;
+      }
     }
     .footer {
       width: 100%;
@@ -210,6 +217,9 @@
       </p>
       <a class="button button-google-play" href="https://play.google.com/store/apps/details?id=twa.oppositesgame">
         <span class="sr">Get it on Google Play</span>
+      </a>
+      <a class="button button-online" href="https://opposites.co" target="_blank">
+        Play Online
       </a>
     </div>
     <span class="sloth-with-box"></span>
