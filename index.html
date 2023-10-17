@@ -137,6 +137,18 @@
       height: 250px;
       background: url(sloth-with-box.svg) 50% 50% no-repeat;
       display: block;
+      position: relative;
+    }
+    .pssst {
+      background: url(pssst.svg) 50% 50% no-repeat;
+      width: 123px;
+      height: 20px;
+      display: block;
+      position: absolute;
+      top: -20px;
+      left: 40px;
+      text-indent: -9999px;
+      overflow: hidden;
     }
     @media only screen and (min-width: 520px) {
       .content {
@@ -155,6 +167,9 @@
       }
       .sloth-with-box {
         margin-left: 40px;
+      }
+      .pssst {
+        top: 260px;
       }
     }
   </style>
@@ -176,7 +191,9 @@
           Play Online
         </a>
       </div>
-      <span class="sloth-with-box"></span>
+      <a href="https://www.amazon.com/Opposites-Mr-Matthew-Hartman/dp/B0C7J2ZWV1/" target="_blank" title="Get the Opposites book via Amazon" class="sloth-with-box">
+        <span class="pssst">Get the Opposites book via Amazon</span>
+      </a>
     </div>
   </div>
 </body>
